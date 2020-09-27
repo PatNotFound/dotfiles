@@ -1,0 +1,36 @@
+[user]
+  name = Nuno Pereira
+  email = nuno.pereira.as@gmail.com
+
+[push]
+  default = simple
+
+[core]
+  fileMode = false
+  editor = $EDITOR
+  ignorecase = false
+
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+
+[pull]
+  rebase = false
+ 
+[merge]
+  tool = meld
+  renamelimit = 1234
+
+[color]
+  ui = true
+  diff = auto
+  status = auto
+  branch = auto
+
+[alias]
+  ds = diff --staged
+  ls = log --pretty=format:\"%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]\" --decorate --date=short
+  graph = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
