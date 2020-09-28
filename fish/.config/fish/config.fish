@@ -26,39 +26,22 @@ end
 ## VI mode
 fish_vi_key_bindings
 
-## Coloring
-set fish_color_command normal
-set fish_color_comment black
-set fish_color_cwd blue
-set fish_color_cwd_root red
-set fish_color_end magenta
-set fish_color_error yellow
-set fish_color_escape cyan
-set fish_color_history_current cyan
-set fish_color_host normal
-set fish_color_match blue
-set fish_color_normal normal
-set fish_color_operator cyan
-set fish_color_param blue
-set fish_color_quote green
-set fish_color_redirection blue
-set fish_color_search_match --background=black
-set fish_color_selection blue
-set fish_color_status red
-set fish_color_user red
-set fish_pager_color_completion blue
-set fish_pager_color_description yellow
-set fish_pager_color_prefix cyan
-set fish_pager_color_progress cyan
+## Colors
+set fish_color_error brred
+set fish_color_command green --bold
+set fish_color_quote yellow
+set fish_color_autosuggestion brblack
 
 ## Aliases
 set EDITOR "nvim"
 set VISUAL "$EDITOR"
 alias c="$EDITOR"
 alias cat='bat -pp --theme="Nord"'
-alias fconf="$EDITOR $HOME/.config/fish/config.fish"
+alias shconf="$EDITOR $HOME/dotfiles/fish/.config/fish/config.fish"
 alias ls="exa -la"
 alias rl="source $HOME/.config/fish/config.fish"
+
+
 
 ## BEGIN GIT ALIASES ##
 
@@ -159,6 +142,8 @@ alias gstp='git stash pop'
 alias gstd='git stash drop'
 
 ## END GIT ALIASES ##
+
+
 
 starship init fish | source
 zoxide init fish | source
