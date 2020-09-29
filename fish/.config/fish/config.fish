@@ -35,11 +35,13 @@ set fish_color_autosuggestion brblack
 ## Aliases
 set EDITOR "nvim"
 set VISUAL "$EDITOR"
+
 alias c="$EDITOR"
 alias cat='bat -pp --theme="Nord"'
-alias shconf="$EDITOR $HOME/dotfiles/fish/.config/fish/config.fish"
 alias ls="exa -la"
 alias rl="source $HOME/.config/fish/config.fish"
+alias shconf="$EDITOR $HOME/dotfiles/fish/.config/fish/config.fish"
+alias vimrc="$EDITOR $HOME/dotfiles/nvim/.config/nvim/init.vim"
 
 
 
@@ -125,16 +127,9 @@ alias grhh='git reset HEAD --hard'
 alias gclean='git reset --hard; and git clean -dfx'
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 
-#remove the gf alias
-#alias gf='git ls-files | grep'
-
 alias gpoat='git push origin --all; and git push origin --tags'
 alias gmt='git mergetool --no-prompt'
 #compdef _git gm=git-mergetool
-
-alias gg='git gui citool'
-alias gga='git gui citool --amend'
-alias gk='gitk --all --branches'
 
 alias gsts='git stash show --text'
 alias gsta='git stash'
