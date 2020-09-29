@@ -37,7 +37,7 @@ set EDITOR "nvim"
 set VISUAL "$EDITOR"
 
 alias c="$EDITOR"
-alias cat='bat -pp --theme="Nord"'
+alias cat='bat --theme="Nord"'
 alias ls="exa -la"
 alias rl="source $HOME/.config/fish/config.fish"
 alias shconf="$EDITOR $HOME/dotfiles/fish/.config/fish/config.fish"
