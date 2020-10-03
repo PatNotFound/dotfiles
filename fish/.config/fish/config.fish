@@ -33,8 +33,8 @@ set fish_color_quote yellow
 set fish_color_autosuggestion brblack
 
 ## Aliases
-set EDITOR "nvim"
-set VISUAL "$EDITOR"
+set -gx EDITOR nvim
+set -gx VISUAL $EDITOR
 
 alias c="$EDITOR"
 alias cat='bat --theme="Nord"'
@@ -42,7 +42,6 @@ alias ls="exa -la"
 alias rl="source $HOME/.config/fish/config.fish"
 alias shconf="$EDITOR $HOME/dotfiles/fish/.config/fish/config.fish"
 alias vimrc="$EDITOR $HOME/dotfiles/nvim/.config/nvim/init.vim"
-
 
 
 ## BEGIN GIT ALIASES ##
@@ -139,8 +138,8 @@ alias gstd='git stash drop'
 ## END GIT ALIASES ##
 
 
-
 starship init fish | source
 zoxide init fish | source
+fnm env --multi | source
 
 set -gx PATH $HOME/.cargo/bin $PATH
