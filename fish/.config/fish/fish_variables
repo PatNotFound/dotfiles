@@ -34,4 +34,3 @@ SETUVAR fish_pager_color_completion:blue
 SETUVAR fish_pager_color_description:yellow
 SETUVAR fish_pager_color_prefix:cyan
 SETUVAR fish_pager_color_progress:cyan
-SETUVAR fish_user_paths:/Users/nuno\x2epereira/\x2econfig/nvm/10\x2e22\x2e1/bin

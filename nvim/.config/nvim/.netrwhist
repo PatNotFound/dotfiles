@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/Users/klawro17/Projects'
+let g:netrw_dirhist_0='/Users/klawro17/Projects/benawad-tutorial'
+let g:netrw_dirhist_9='/Users/klawro17/Projects'
+let g:netrw_dirhist_8='/Users/klawro17/Projects/CV'
+let g:netrw_dirhist_7='/Users/klawro17/Projects'
+let g:netrw_dirhist_6='/Users/klawro17/Projects/CV'
+let g:netrw_dirhist_5='/Users/klawro17/dotfiles/git'
+let g:netrw_dirhist_4='/Users/klawro17/dotfiles'
+let g:netrw_dirhist_3='/Users/klawro17/Projects/benawad-tutorial'
+let g:netrw_dirhist_2='/Users/klawro17/Projects/benawad-tutorial/src'

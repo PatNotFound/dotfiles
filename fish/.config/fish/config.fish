@@ -143,3 +143,4 @@ zoxide init fish | source
 fnm env --multi | source
 
 set -gx PATH $HOME/.cargo/bin $PATH
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths

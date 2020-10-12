@@ -10,8 +10,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
-    " File Explorer
-    Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     " Status bar
@@ -22,5 +20,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Text Navigation
     Plug 'unblevable/quick-scope'
-    
+    " Start menu
+    Plug 'mhinz/vim-startify'
+    " Add surroundings in pairs
+    Plug 'tpope/vim-surround'
+    " FZF
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    Plug 'airblade/vim-rooter'
+
 call plug#end()
