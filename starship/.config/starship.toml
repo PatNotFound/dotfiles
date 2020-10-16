@@ -1,11 +1,22 @@
 # Don't print a new line at the start of the prompt
 add_newline = true
 
-# Replace the "❯" symbol in the prompt with "➜"
-# [character]      # The name of the module we are configuring is "character"
-# symbol = "➜"     # The "symbol" segment is being set to "➜"
+format = """
+[⎧](bold yellow)☯︎ $username\
+$hostname\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status
+[⎩](bold yellow)$character"""
 
-# Disable the package module, hiding it from the prompt completely
-[package]
-disabled = true
+[character]
+format = "$symbol"
+success_symbol = "[✔︎](bold green) "
+error_symbol = "[✕](bold red) "
+vicmd_symbol = "[Ɲ](bold cyan) "
 
+[username]
+style_root = "red bold"
+style_user = "yellow"
