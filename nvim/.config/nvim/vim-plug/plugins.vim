@@ -14,8 +14,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Status bar
     Plug 'itchyny/lightline.vim'
-    " Theme
-    Plug 'arcticicestudio/nord-vim'
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Text Navigation
@@ -28,5 +26,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
+
+    " Themes
+    " Plug 'arcticicestudio/nord-vim'
+    Plug 'sonph/onehalf', { 'rtp': 'vim' }
+
+    " Language specific
 
 call plug#end()

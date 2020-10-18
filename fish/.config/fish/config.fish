@@ -1,27 +1,5 @@
-## Left Prompt
-function fish_prompt
-    # Set the annoying greeting to empty
-    set fish_greeting
-    set -l last_status $status
-    # Show the current working directory
-    set_color $fish_color_cwd
-    echo -n (prompt_pwd)
-    echo -n ' '
-    set_color normal
-end
-
-## Right Prompt
-function fish_right_prompt
-    set_color black
-    echo -n (date +"%H:%M")
-    set_color normal
-end
-
-## Window title
-function fish_title
-    echo -n 'fish in '
-    prompt_pwd
-end
+# Set the annoying greeting to empty
+set fish_greeting
 
 ## VI mode
 fish_vi_key_bindings
@@ -33,18 +11,20 @@ set fish_color_quote yellow
 set fish_color_autosuggestion brblack
 
 ## Aliases
+set -x TERM xterm-256color
 set -gx EDITOR nvim
 set -gx VISUAL $EDITOR
 
 alias c="$EDITOR"
 alias cat='bat --theme="Nord"'
 alias ls="exa -la"
+alias mx="tmuxinator"
 alias rl="source $HOME/.config/fish/config.fish"
 alias shconf="$EDITOR $HOME/dotfiles/fish/.config/fish/config.fish"
 alias vimrc="$EDITOR $HOME/dotfiles/nvim/.config/nvim/init.vim"
 
 
-## BEGIN GIT ALIASES ##
+####### BEGIN GIT ALIASES #######
 
 alias g='git'
 #compdef g=git
@@ -135,7 +115,7 @@ alias gsta='git stash'
 alias gstp='git stash pop'
 alias gstd='git stash drop'
 
-## END GIT ALIASES ##
+######## END GIT ALIASES #######
 
 
 starship init fish | source

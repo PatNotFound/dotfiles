@@ -9,6 +9,7 @@ brew install stow
 brew install fish
 brew install starship
 brew install tmux
+brew install tmuxinator
 brew install bat
 brew install exa
 brew install zoxide
@@ -31,3 +32,4 @@ brew cask install flycut
 brew cask install rectangle
 brew cask install flux
 brew cask install keka
+brew cask install thor
