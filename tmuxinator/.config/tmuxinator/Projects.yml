@@ -1,9 +1,0 @@
-name: Projects
-root: ~/Projects
-
-windows:
-  - editor:
-      layout: main-horizontal
-      panes:
-        -
-        -

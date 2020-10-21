@@ -1,6 +1,6 @@
 [user]
-  name = Nuno Pereira
-  email = nuno.pereira.as@gmail.com
+  name = Patricia Sousa
+  email = anapatricia.sousap@gmail.com
 
 [push]
   default = simple
@@ -18,7 +18,7 @@
 
 [pull]
   rebase = false
- 
+
 [merge]
   tool = meld
   renamelimit = 1234

@@ -3,33 +3,26 @@ brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
 
 # Binaries
-brew install neovim
-brew install gnupg
 brew install stow
 brew install fish
 brew install starship
-brew install tmux
-brew install tmuxinator
 brew install bat
 brew install exa
 brew install zoxide
 brew install python3
 brew install Schniz/tap/fnm
-brew install spotifyd
-brew install spotify-tui
-brew install fzf
-brew install ripgrep
-brew install fd
 brew install yarn
-brew install postgres
 
 # Casks
-brew cask install bitwarden
-brew cask install alacritty
-brew cask install firefox
-brew cask install discord
-brew cask install flycut
-brew cask install rectangle
-brew cask install flux
+brew cask install 1password
+brew cask install vscode
+brew cask install iterm2
+brew cask install spotify
+brew cask install chrome
+brew cask install sketch
+brew cask install sketchbook
+brew cask install wacom-inkspace
+brew cask install whatsapp
+brew cask install jumpcut
+brew cask install spectacle
 brew cask install keka
-brew cask install thor

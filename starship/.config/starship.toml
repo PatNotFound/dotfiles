@@ -2,9 +2,10 @@
 add_newline = true
 
 format = """
-[⎧](bold yellow)☯︎ $username\
+[⎧](bold yellow)🦄 $username\
 $hostname\
 $directory\
+$nodejs\
 $git_branch\
 $git_commit\
 $git_state\
