@@ -15,14 +15,15 @@ brew install yarn
 
 # Casks
 brew cask install 1password
-brew cask install vscode
-brew cask install iterm2
-brew cask install spotify
 brew cask install chrome
+brew cask install iterm2
+brew cask install jumpcut
+brew cask install keka
 brew cask install sketch
 brew cask install sketchbook
+brew cask install spectacle
+brew cask install spotify
+brew cask install stremio
+brew cask install vscode
 brew cask install wacom-inkspace
 brew cask install whatsapp
-brew cask install jumpcut
-brew cask install spectacle
-brew cask install keka
